@@ -16,12 +16,11 @@ function loadScript(callback, ...urls) {
 
    Promise.all(promises)
        .then(function (resolve) {
-          resolve[resolve.length - 1].onreadystatechange = callback;
-          resolve[resolve.length - 1].onload = callback;
-
           for (let i = 0; i < resolve.length; i++) {
              head.appendChild(resolve[i]);
           }
+          resolve[resolve.length - 1].onreadystatechange = callback;
+          resolve[resolve.length - 1].onload = callback;
        })
        .catch(function (e) {
           console.error(e);
@@ -34,13 +33,12 @@ function loadScript(callback, ...urls) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-   loadScript(main, './js/Canvas.js', './js/CanvasElement.js');
+   loadScript(main, './js/Canvas.js', './js/CanvasElement.js', './js/RectangleElement.js');
 });
 
 
 const main = () => {
-   console.log('js plugged');
-
+   console.log('js ps');
    // import smiley to js
    // const smiley = document.getElementById('canvas');
    //
@@ -84,7 +82,5 @@ const main = () => {
    // }
 
    const canvas = new Canvas('testCanvas', 'Test Canvas');
-   const canvasElement = new CanvasElement();
-
-   console.error(canvasElement.id);
+   const canvasElement = new RectangleElement(canvas.getContext(), 25, 25, 100, 100);
 }

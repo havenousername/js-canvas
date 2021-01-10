@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2154e3fb-d7e8-4c45-a911-6641aea26eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/CanvasElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/RectangleElement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/CanvasElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/CanvasElement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +55,9 @@
       <updated>1605561312467</updated>
       <workItem from="1605561313626" duration="7470000" />
       <workItem from="1605903819603" duration="5030000" />
-      <workItem from="1608666061668" duration="3488000" />
+      <workItem from="1608666061668" duration="6504000" />
+      <workItem from="1609708971724" duration="661000" />
+      <workItem from="1610230930615" duration="990000" />
     </task>
     <servers />
   </component>
@@ -71,6 +74,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="594" y="262" key="#Inspections" timestamp="1605566191657">

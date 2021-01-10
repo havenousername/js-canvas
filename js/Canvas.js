@@ -70,6 +70,10 @@ const Canvas = (function() {
         return privateStore[this.id]._contextType;
     }
 
+    Canvas.prototype.getContext = function () {
+        return privateStore[this.id]._context;
+    }
+
     return Canvas;
 })();
 
