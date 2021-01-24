@@ -1,0 +1,30 @@
+{
+  "name": "js-canvas-rectagle-creator",
+  "version": "1.0.0",
+  "description": "This is a simple JS project the main goal of which is to learn Canvas Api. The final goal of the project to be able to create shapes of different size, color, etc.",
+  "main": "main.js",
+  "type": "module",
+  "command": "node --experimental-modules",
+  "scripts": {
+    "test": "echo \"Success: no test specified\" && exit 0",
+    "server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/havenousername/js-canvas.git"
+  },
+  "keywords": [
+    "canvas",
+    "shapes"
+  ],
+  "author": "Cristea Andrei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/havenousername/js-canvas/issues"
+  },
+  "homepage": "https://github.com/havenousername/js-canvas#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {}
+}

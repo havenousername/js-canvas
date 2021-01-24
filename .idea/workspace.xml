@@ -19,12 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2154e3fb-d7e8-4c45-a911-6641aea26eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/RectangleElement.js" afterDir="false" />
+    <list default="true" id="2154e3fb-d7e8-4c45-a911-6641aea26eb0" name="Default Changelist" comment="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/button/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/canvas/Dimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/canvas/Position.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/canvas/Rectangle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/CanvasElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/CanvasElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/old/Canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/CanvasElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/old/CanvasElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/RectangleElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/old/RectangleElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +54,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js/old" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/button" />
+      <recent name="$PROJECT_DIR$/canvas" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +76,24 @@
       <workItem from="1608666061668" duration="6504000" />
       <workItem from="1609708971724" duration="661000" />
       <workItem from="1610230930615" duration="990000" />
+      <workItem from="1610293954341" duration="657000" />
+      <workItem from="1610397418082" duration="4247000" />
+      <workItem from="1610482915545" duration="1031000" />
+      <workItem from="1610567871994" duration="7002000" />
+      <workItem from="1610630035584" duration="588000" />
+      <workItem from="1610968961668" duration="102000" />
+      <workItem from="1611010967303" duration="2462000" />
+      <workItem from="1611434245804" duration="12780000" />
+      <workItem from="1611493090179" duration="639000" />
     </task>
+    <task id="LOCAL-00001" summary="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js">
+      <created>1610294161450</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610294161450</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,14 +111,27 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="594" y="262" key="#Inspections" timestamp="1605566191657">
       <screen x="0" y="23" width="1920" height="1107" />
     </state>
     <state x="594" y="262" key="#Inspections/0.23.1920.1107@0.23.1920.1107" timestamp="1605566191657" />
-    <state x="625" y="270" width="670" height="676" key="search.everywhere.popup" timestamp="1608672068182">
-      <screen x="0" y="23" width="1920" height="1107" />
+    <state x="698" y="329" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611449306124">
+      <screen x="0" y="23" width="1920" height="1108" />
+    </state>
+    <state x="698" y="329" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1108@0.23.1920.1108" timestamp="1611449306124" />
+    <state x="25" y="121" width="1720" height="904" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611443424537">
+      <screen x="0" y="23" width="1920" height="1109" />
+    </state>
+    <state x="25" y="121" width="1720" height="904" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1109@0.23.1920.1109" timestamp="1611443424537" />
+    <state x="625" y="270" width="670" height="677" key="search.everywhere.popup" timestamp="1611444534230">
+      <screen x="0" y="23" width="1920" height="1108" />
     </state>
     <state x="625" y="270" width="670" height="676" key="search.everywhere.popup/0.23.1920.1107@0.23.1920.1107" timestamp="1608672068182" />
+    <state x="625" y="270" width="670" height="677" key="search.everywhere.popup/0.23.1920.1108@0.23.1920.1108" timestamp="1611444534230" />
   </component>
 </project>

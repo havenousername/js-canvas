@@ -5,25 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Click on eye to see secret!</h1>
     <div id="canvas-wrapper">
     </div>
-<!--    <canvas style="background: aquamarine" id="canvas" width="350" height="150">-->
-<!--        Some bullshit text-->
-<!--        <button id="click_id" onclick="console.log('this secret button, placed as the fallback of the canvas, was clicked using the addHitRegion method!')"></button>-->
-<!--    </canvas>-->
-<!--    <canvas style="background: aquamarine" id="kfc" width="350" height="150">-->
-<!--        Some bullshit text-->
-<!--        <button id="id" onclick="console.log('this secret button, placed as the fallback of the canvas, was clicked using the addHitRegion method!')"></button>-->
-<!--    </canvas>-->
-    <p>
-        This uses an experimental API; if you can't see the lips of the smiley, make sure your browser meets the
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/addHitRegion#Browser_compatibility">requirements</a>.
-    </p>
-    <script src="./js/main.js">
+    <canvas id="canvas" width="1500" height="700">
+    </canvas>
+    <div class="is-main-footer" id="footer">
+    </div>
+    <script src="./main.js">
     </script>
 </body>
 </html>
