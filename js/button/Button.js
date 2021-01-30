@@ -18,7 +18,6 @@ const createButton = (label,  type, handlers ,appendId = null, id = null ) => {
     button.innerHTML = label;
     if (handlers && handlers.click) {
         button.addEventListener('click', () => {
-            console.log(handlers)
             handlers.click();
         })
     }

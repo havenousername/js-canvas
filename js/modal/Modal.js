@@ -19,6 +19,12 @@ class Modal {
         document.body.appendChild(this._modalWrapper);
         createButton('&#10005;', 'is-close-button', {click: this.closeModal}, 'modal', 'close-button');
         this._modal.appendChild(this._modalGuts);
+
+        document.addEventListener('click', (event) => {
+            if (this._modalWrapper.contains(event.target) && !this._modal.contains(event.target)) {
+                this.closeModal();
+            }
+        });
     }
     openModal = () => {
         this._modal.classList.remove('closed');
