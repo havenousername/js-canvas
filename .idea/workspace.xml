@@ -19,21 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2154e3fb-d7e8-4c45-a911-6641aea26eb0" name="Default Changelist" comment="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/canvas/Dimensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/canvas/Position.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/canvas/Rectangle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="2154e3fb-d7e8-4c45-a911-6641aea26eb0" name="Default Changelist" comment="Big Update! Modal window Functionality - creates new Rectangle class instance from inputs&#10;- Button.js createButton function could track handlers and append to different DOMElements &#10;- Modal.js class created and instantiated. Open/Close functionality. &#10;- Add live-serve to package.json &#10;- .gitignore ingore .idea folder&#10;- main.css styles for Modal.js&#10;- createRectangleHtml.js content for Modal.js class &#10;- listeners in createRectangleHtml.js as functional part of Modal.js&#10;- Rectangle.js class constructor props fixed.">
+      <change afterPath="$PROJECT_DIR$/js/create-rectangle-html/createRectangleHtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modal/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/old/Canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/CanvasElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/old/CanvasElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/RectangleElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/old/RectangleElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/canvas/Rectangle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/canvas/Rectangle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +51,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/modal" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/js/old" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/button" />
-      <recent name="$PROJECT_DIR$/canvas" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,7 +79,10 @@
       <workItem from="1610968961668" duration="102000" />
       <workItem from="1611010967303" duration="2462000" />
       <workItem from="1611434245804" duration="12780000" />
-      <workItem from="1611493090179" duration="639000" />
+      <workItem from="1611493090179" duration="7967000" />
+      <workItem from="1611563895707" duration="11000" />
+      <workItem from="1611607879836" duration="3246000" />
+      <workItem from="1612014401109" duration="6803000" />
     </task>
     <task id="LOCAL-00001" summary="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js">
       <created>1610294161450</created>
@@ -93,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610294161450</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup the project with npm init, install live server, create initial classes">
+      <created>1611499244742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611499244742</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +118,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add RectangleElement.js&#10;change main js loadScript function &#10;change CanvasElement.js" />
+    <MESSAGE value="Setup the project with npm init, install live server, create initial classes" />
+    <MESSAGE value="Modification: Modal window Functionality - creates new Rectangle class instance from inputs" />
+    <MESSAGE value="Big Update! Modal window Functionality - creates new Rectangle class instance from inputs&#10;- Button.js createButton function could track handlers and append to different DOMElements &#10;- Modal.js class created and instantiated. Open/Close functionality. &#10;- Add live-serve to package.json &#10;- .gitignore ingore .idea folder&#10;- main.css styles for Modal.js&#10;- createRectangleHtml.js content for Modal.js class &#10;- listeners in createRectangleHtml.js as functional part of Modal.js&#10;- Rectangle.js class constructor props fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Big Update! Modal window Functionality - creates new Rectangle class instance from inputs&#10;- Button.js createButton function could track handlers and append to different DOMElements &#10;- Modal.js class created and instantiated. Open/Close functionality. &#10;- Add live-serve to package.json &#10;- .gitignore ingore .idea folder&#10;- main.css styles for Modal.js&#10;- createRectangleHtml.js content for Modal.js class &#10;- listeners in createRectangleHtml.js as functional part of Modal.js&#10;- Rectangle.js class constructor props fixed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="594" y="262" key="#Inspections" timestamp="1605566191657">
@@ -124,10 +132,19 @@
       <screen x="0" y="23" width="1920" height="1108" />
     </state>
     <state x="698" y="329" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1108@0.23.1920.1108" timestamp="1611449306124" />
-    <state x="25" y="121" width="1720" height="904" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611443424537">
-      <screen x="0" y="23" width="1920" height="1109" />
+    <state x="25" y="121" width="1720" height="902" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611501049504">
+      <screen x="0" y="23" width="1920" height="1106" />
     </state>
+    <state x="25" y="121" width="1720" height="902" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1106@0.23.1920.1106" timestamp="1611501049504" />
     <state x="25" y="121" width="1720" height="904" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1109@0.23.1920.1109" timestamp="1611443424537" />
+    <state x="730" y="234" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1611499080211">
+      <screen x="0" y="23" width="1920" height="1108" />
+    </state>
+    <state x="730" y="234" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.23.1920.1108@0.23.1920.1108" timestamp="1611499080211" />
+    <state x="786" y="309" key="refactoring.ChangeSignatureDialog" timestamp="1611512517589">
+      <screen x="0" y="23" width="1920" height="1106" />
+    </state>
+    <state x="786" y="309" key="refactoring.ChangeSignatureDialog/0.23.1920.1106@0.23.1920.1106" timestamp="1611512517589" />
     <state x="625" y="270" width="670" height="677" key="search.everywhere.popup" timestamp="1611444534230">
       <screen x="0" y="23" width="1920" height="1108" />
     </state>

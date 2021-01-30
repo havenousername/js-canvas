@@ -45,3 +45,96 @@
     border: 3px solid rgba(236, 232, 225, 0.9);
 }
 
+.is-flex {
+    display: flex;
+}
+
+.is-justify-center {
+    justify-content: center;
+}
+
+.is-align-items-center {
+    align-items: center;
+}
+
+.is-small {
+    font-size: 18px;
+    width: 160px;
+    height: 50px;
+}
+
+.modal-wrapper {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.closed {
+    display: none;
+}
+
+.modal {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: 700px;
+    max-height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    right: 50%;
+    /* Use this for centering if unknown width/height */
+    transform: translate(-50%, 15%);
+    background: white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal .is-close-button {
+    width: 80px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 20px;
+    border: 0;
+    background: transparent;
+    color: black;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+}
+
+.create-rectangle-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.is-input {
+    max-width: 250px;
+    width: 100%;
+}
+
+.is-float-right {
+    float: right;
+}
+
+.input-item {
+    padding: 20px 0;
+}
+
+.button-modal {
+    margin: 60px auto;
+}

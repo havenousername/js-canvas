@@ -7,7 +7,7 @@
   "command": "node --experimental-modules",
   "scripts": {
     "test": "echo \"Success: no test specified\" && exit 0",
-    "server": "live-server"
+    "hot": "live-server"
   },
   "repository": {
     "type": "git",

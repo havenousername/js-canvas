@@ -4,14 +4,12 @@
  *
  * @constructor
  * @param {string} canvasId
- * @param {number} x
- * @param {number} y?
- * @param {number} width?
- * @param {number} height?
+ * @param {object} props
  */
 
 class Rectangle {
-    constructor(canvasId, x, y, width, height) {
+    constructor(canvasId, props) {
+        console.log(props)
         if (canvasId === undefined) {
             throw new Error("No canvasId specified");
         } else if (typeof canvasId !== 'string') {
@@ -25,28 +23,30 @@ class Rectangle {
             throw new Error('Canvas id is wrong or has no context');
         }
 
-        if (x === undefined) {
+        if (props.x === undefined) {
             throw new Error("Wrong argument number exception. Please provide at at least three args")
-        } else if (y === undefined) {
+        } else if (props.y === undefined) {
             console.log('Square created!')
-            this._position = new Position(x,x);
-            this._dimentions = new Dimensions(x,x);
-        } else if (width === undefined) {
+            this._position = new Position(props.x,props.x);
+            this._dimentions = new Dimensions(props.x,props.x);
+        } else if (props.width === undefined) {
             console.log('Rectangle same width and height as dimensions');
-            this._position = new Position(x,y);
-            this._dimentions = new Dimensions(x,y);
-        } else if (height === undefined) {
+            this._position = new Position(props.x,props.y);
+            this._dimentions = new Dimensions(props.x,props.y);
+        } else if (props.height === undefined) {
             console.log('Square with width side created');
-            this._position = new Position(x,y);
-            this._dimentions = new Dimensions(width, width);
+            this._position = new Position(props.x,props.y);
+            this._dimentions = new Dimensions(props.width, props.width);
         } else {
             console.log('Reactangle created');
-            this._position = new Position(x, y);
-            this._dimentions = new Dimensions(width, height);
+            this._position = new Position(props.x, props.y);
+            this._dimentions = new Dimensions(props.width, props.height);
         }
-        this._stroke = 0;
-        this._clearStroke = 0;
-        this._innerStroke = 0;
+        this._stroke = props.stroke ? props.stroke : 0;
+        this._clearStroke = props.clearStroke ? props.clearStroke : 0;
+        this._innerStroke = props.innerStroke ? props.innerStroke : 0;
+        this._backgroundColor = props.backgroundColor ? props.backgroundColor : 'rgb(0,0,0)';
+        this._borderColor = props.borderColor ? props.borderColor : 'rgb(0, 0, 0)';
     }
     /**
      * @param {number} stroke
@@ -69,6 +69,24 @@ class Rectangle {
         this._innerStroke = stroke;
     }
 
+    /**
+     *
+     * @param {string} bgColor
+     */
+
+    set setBackgroundColor(bgColor) {
+        this._backgroundColor = bgColor;
+    }
+
+    /**
+     *
+     * @param {string} borderColor
+     */
+
+    set setBorderColor(borderColor) {
+        this._backgroundColor = borderColor;
+    }
+
     get position() {
         return this._position;
     }
@@ -86,11 +104,11 @@ class Rectangle {
         const inverseX = center.x - this._innerStroke;
         const inverseY = center.y - this._innerStroke;
 
+        this._2dctx.fillStyle = this._stroke <= 0 ? this._backgroundColor : this._borderColor;
         if (this._stroke > 0) {
-            this._2dctx.fillStyle = 'rgb(200, 0, 0)';
+            this._2dctx.fillStyle = this._backgroundColor;
             this._2dctx.fillRect(this._position.x - this._stroke, this._position.y - this._stroke, this._dimentions.width + this._stroke * 2,this._dimentions.height + this._stroke * 2 );
         }
-        this._2dctx.fillStyle = 'rgb(0,0,0)';
         this._2dctx.fillRect(this._position.x,this._position.y, this._dimentions.width, this._dimentions.height);
         if (this._clearStroke > 0) {
             this._2dctx.clearRect( this._position.x + this._clearStroke,this._position.y + this._clearStroke, this._dimentions.width - this._clearStroke * 2, this._dimentions.height - this._clearStroke * 2);

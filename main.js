@@ -51,15 +51,19 @@ function loadScript(callback, ...urls) {
 document.addEventListener("DOMContentLoaded", () => {
     loadScript(main,
         {src: './js/canvas/Rectangle.js'},
+        {src: './js/modal/Modal.js'},
         {src: './js/canvas/Dimensions.js'},
         {src: './js/canvas/Position.js'},
-        {src: './js/button/Button.js'});
+        {src: './js/button/Button.js'},
+        {src: './js/create-rectangle-html/createRectangleHtml.js'},
+    )
 });
 
 const main = () => {
     (function() {
         let height = window.innerHeight;
         let width = window.innerWidth;
+        const createRectangleModal = new Modal({html: createRectangleHtml, listeners: listeners});
 
 
         const getDimensions = () => {
@@ -72,31 +76,7 @@ const main = () => {
             getDimensions()
         }
 
-        function simpleDraw() {
-            const canvas = document.getElementById('canvas');
-            canvas.width = width;
-            canvas.height = height;
-
-            if (canvas.getContext) {
-                const ctx = canvas.getContext('2d');
-                ctx.fillStyle = 'rgb(200,0,0)';
-                ctx.fillRect(10,10, 50,50);
-
-                ctx.fillStyle = 'rgba(0,0,200, 0.5)';
-                ctx.fillRect (30, 30,50,50)
-            } else {
-                throw new Error("Error. Your browser doesn't support 2d canvas.");
-            }
-        }
-        const square = new Rectangle('canvas', 40);
-        console.log(square)
-        square.setStroke = 10;
-        square.setClearStroke = 10;
-        square.setInnerStoke = 10;
-        square.draw();
-        square.undraw();
-
-        createButton('Create Rectangle', 'is-primary');
+        createButton('Create Rectangle', 'is-primary', {click: createRectangleModal.openModal});
         createButton('Destroy Rectangle', 'is-danger');
     })()
 }
